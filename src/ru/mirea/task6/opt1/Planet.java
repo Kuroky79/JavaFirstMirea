@@ -1,7 +1,5 @@
 package ru.mirea.task6.opt1;
 
-import ru.mirea.task6.opt1.Nameable;
-
 public class Planet implements Nameable {
     String name;
     String color;
@@ -12,7 +10,7 @@ public class Planet implements Nameable {
     }
 
     @Override
-    public void name() {
+    public void getName() {
         System.out.println("Name: " + name + " color: " + color);
     }
 }

@@ -1,22 +1,47 @@
 package ru.mirea.task7.Shape;
 
-public class Square extends Shape {
+public class Square extends Rectangle
+{
+    public Square()
+    {
+        super();
+    }
 
-    protected double side;
-    public Square(){
-        side = 0;
+    public Square(double side)
+    {
+        super(side, side);
     }
-    public Square(double side, String color, boolean filled){
-        super(color,filled);
-        this.side=side;
+
+    public Square(double side, String color, boolean filled)
+    {
+        super(side, side, color, filled);
     }
-    public double getArea(){
-        return side*side;
+
+    public double getSide()
+    {
+        return super.getLength();
     }
-    public double getPerimeter() {
-        return 4*side;
+
+    public void setSide(double side)
+    {
+        super.setLength(side);
     }
-    public String toString(){
-        return ("Square, side = "+side+", colour = "+color+", filled - "+ filled);
+
+    public void setWidth(double side)
+    {
+        super.setWidth(side);
+    }
+
+    public void setLength(double side)
+    {
+        super.setLength(side);
+    }
+
+    public String toString ()
+    {
+        if(super.isFilled())
+            return super.getColor() + " filled square with: side - " + getSide();
+        else
+            return super.getColor() + " not filled square with: side - " + getSide();
     }
 }
