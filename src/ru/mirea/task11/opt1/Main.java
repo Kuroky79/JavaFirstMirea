@@ -10,7 +10,7 @@ public class Main {
 
     private static boolean finished = false;
     private static int incorrectAnswers = 0;
-
+    //here
     public static void main(String[] args) {
         Random random = new Random();
         int generatedRandomNumber = random.nextInt(20);
