@@ -10,11 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
         Student[] idNumber = new Student[ARRAY_SIZE];
-        idNumber[0] = new Student(1, "Chuck", "Berton", 10);
-        idNumber[1] = new Student(5, "Jake", "Tomphson", 12);
-        idNumber[2] = new Student(4, "Matt", "Perkot", 17);
-        idNumber[3] = new Student(12, "Ted", "Murray", 2);
-        idNumber[4] = new Student(3, "Koul", "Furton", 14);
+        idNumber[0] = new Student(3, "Fraer", "Ordinary", 9);
+        idNumber[1] = new Student(8, "Botan", "Smart", 11);
+        idNumber[2] = new Student(5, "Matty", "Pit", 19);
+        idNumber[3] = new Student(15, "Crok", "Green", 1);
+        idNumber[4] = new Student(6, "Kolt", "Ferguson", 13);
 
         System.out.println(Arrays.toString(idNumber));
         Arrays.sort(idNumber, new SortingStudentsByGPA());

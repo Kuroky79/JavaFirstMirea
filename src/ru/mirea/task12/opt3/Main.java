@@ -31,16 +31,16 @@ public class Main {
         Student[] firstArr = new Student[ARRAY_SIZE];
         Student[] secondArr = new Student[ARRAY_SIZE];
         Student[] mergedArr = new Student[ARRAY_SIZE * 2];
-        firstArr[0] = new Student(1, "Jho", "Berton", 14);
-        firstArr[1] = new Student(3, "Jake", "Tomphson", 14);
-        firstArr[2] = new Student(5, "Frick", "APerkot", 7);
-        firstArr[3] = new Student(6, "Ted", "Murray", 8);
-        firstArr[4] = new Student(3, "Kel", "Furt", 14);
-        secondArr[0] = new Student(1, "Chuck", "Berty", 7);
-        secondArr[1] = new Student(6, "Fred", "Tomphson", 4);
-        secondArr[2] = new Student(4, "Matt", "APerkot", 7);
-        secondArr[3] = new Student(14, "Tod", "Murrs", 23);
-        secondArr[4] = new Student(11, "Kort", "First", 15);
+        firstArr[0] = new Student(1, "Brain", "Rain", 14);
+        firstArr[1] = new Student(3, "Jho", "Tor", 14);
+        firstArr[2] = new Student(5, "Frick", "Smel", 7);
+        firstArr[3] = new Student(6, "Cot", "Murray", 8);
+        firstArr[4] = new Student(3, "Kelt", "Pit", 14);
+        secondArr[0] = new Student(1, "Fraer", "Ordinary", 7);
+        secondArr[1] = new Student(6, "Botan", "Smart", 4);
+        secondArr[2] = new Student(4, "Matty", "APerkot", 7);
+        secondArr[3] = new Student(14, "Crok", "Green", 23);
+        secondArr[4] = new Student(11, "Kolt", "Ferguson", 15);
         mergeSort(firstArr, secondArr, mergedArr);
         System.out.println(Arrays.toString(mergedArr));
     }
