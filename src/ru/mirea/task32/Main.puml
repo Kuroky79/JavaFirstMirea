@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+Shape <-- Circle:
+Shape <-- Human:
+Shape <-- Book:
+
+@enduml
