@@ -6,8 +6,8 @@ public class TestCircle {
         circle1.setRadius(10);
         circle1.setX(-5);
         circle1.setY(-1);
-        System.out.println(circle1.getX());
-        System.out.println(circle1.getY());
-        System.out.println(circle1.getRadius());
+        System.out.println("Circle x coordinate" +  " " +circle1.getX());
+        System.out.println("Circle y coordinate" +  " " +circle1.getY());
+        System.out.println("Circle radius" + " " +circle1.getRadius());
     }
 }

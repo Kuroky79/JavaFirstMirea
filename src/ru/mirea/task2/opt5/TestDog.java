@@ -1,4 +1,4 @@
-package ru.mirea.task2.opt4_opt5;
+package ru.mirea.task2.opt5;
 
 public class TestDog {
     Dog [] arr = new Dog[10];

@@ -1,13 +1,13 @@
 package ru.mirea.task5.opt3;
 
-public class Sofa extends Furniture{
-    int size;
+public class Sofa extends  Furniture{
+    int seats;
 
-    public Sofa(int price, String material, int size) {
-        super(price, material);
-        this.size = size;
+    public Sofa( String material, int weight, int price, int seats) {
+        super(material, weight, price);
+        this.seats = seats;
     }
-    public void action(){
-        System.out.println("Lie down");
+    public void info() {
+        System.out.println("It is " + getMaterial() + " sofa " + "weight is " + getWeight() + " on " + seats + " seats " + " and price is " + getPrice());
     }
 }

@@ -1,25 +1,19 @@
 package ru.mirea.task10.opt1;
-import java.util.Scanner;
 
-public class or
-{
-    public void rec()
-    {
-        Scanner scanner = new Scanner(System.in);
-        int number =  scanner.nextInt();
-        if ((number % 2) == 1)
-        {
-            System.out.println(number);
-            rec();
-        }
-        else
-        if (number != 0)
-            rec();
+public class or {
+    public static void main(String[] args) {
+        or rec = new or();
+        rec.printNumbers(4);
     }
 
-    public static void main(String[] args)
-    {
-        or obj = new or();
-        obj.rec();
+    public void printNumbers(int n){
+        if (n == 0)
+            return;
+        printNumbers(n - 1);
+        for (int i = 1; i <= n; ++i) {
+            System.out.print(n + " ");
+        }
+        System.out.println();
+
     }
 }

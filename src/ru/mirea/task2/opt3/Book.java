@@ -1,37 +1,32 @@
 package ru.mirea.task2.opt3;
 
 public class Book {
+    private int page;
     private String name;
-    private int value;
-    public Book (String n, int v) {
-        name = n;
-        value = v;
-    }
-    public Book (String s) {
-        name = s;
-        value = 0;
-    }
-    public Book() {
-        name = "small";
-        value = 0;
-    }
-    public void setValue(int value){
-        this.value = value;
-    }
-    public void setName(String name){
+
+    public Book(int page, String name) {
+        this.page = page;
         this.name = name;
     }
-    public String getName (String name){
-        return name;
+
+    public Book(int page) {
+        this.page = page;
+        this.page = 1;
     }
 
-    public int getValue() {
-        return value;
+
+    public void setPage(int page) {
+        this.page = page;
     }
-    public String toString(){
-        return this.name+" , value "+this.value;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public void lograms(){
-        System.out.println(name+" 'value in kilograms is "+value*7);
+    public String toString() {
+        return "pages: " + this.page +" name: " + this.name;
     }
+    public void print(){
+        System.out.println("Name of this book is " + name + " and there are " + page + " pages");
+    }
+
 }
